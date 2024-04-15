@@ -7,38 +7,44 @@
 <div class="container">
     <form>
         <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom</label>
-            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre Nom">
+            <label for="NameInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NameInput" placeholder="Votre nom" value="Doe">
         </div>
         <div class="mb-3">
-            <label for="PrenomInput" class="form-label">Prénom</label>
-            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre Prénom">
+            <label for="FirstNameInput" class="form-label">Prénom</label>
+            <input disabled type="text" class="form-control" id="FirstNameInput" placeholder="Votre prénom"
+                value="John">
         </div>
         <div class="mb-3">
-            <label for="AllergieInput" class="form-label">Vos Allergies</label>
-            <input type="text" class="form-control" id="AllergieInput" placeholder="Vos Allergies ( Fruits de mer, arachides.....)">
+            <label for="AllergiesInput" class="form-label">Allergies</label>
+            <input type="text" class="form-control" id="AllergiesInput"
+                placeholder="Vos allergies (fruits de mer, gluten....)">
         </div>
         <div class="mb-3">
-            <label for="NbConviveInput" class="form-label">Nombre de convives habituel</label>
-            <input type="number" class="form-control" id="NbConviveInput" placeholder="Combien étes-vous habituellement ?">
+            <label for="NbGuestInput" class="form-label">Nombres de convives</label>
+            <input type="number" class="form-control" id="NbGuestInput" placeholder="Combien êtes-vous habituellement">
         </div>
         <div class="mb-3">
-            <label for="DateInput" class="form-label">Date</label>
+            <label for="DateInput" class="form-label">Date de réservation</label>
             <input type="date" class="form-control" id="DateInput">
         </div>
         <div class="mb-3">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="serviceChoisi" id="midiRadio">
-                <label class="form-check-label" for="midiRadio">Midi</label>
+                <input class="form-check-input" type="radio" name="serviceSelected" id="midiRadio">
+                <label class="form-check-label" for="midiRadio">
+                    Midi
+                </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="serviceChoisi" id="soirRadio" checked>
-                <label class="form-check-label" for="soirRadio">Soir</label>
+                <input class="form-check-input" type="radio" name="serviceSelected" id="soirRadio" checked>
+                <label class="form-check-label" for="soirRadio">
+                    Soir
+                </label>
             </div>
         </div>
         <div class="mb-3">
-            <label for="SelectHour" class="form-label">Heure</label>
-            <select class="form-select" id="SelectHour">
+            <label for="selectHour" class="form-label">Heures</label>
+            <select class="form-select" id="selectHour">
                 <option>19:30</option>
                 <option>19:45</option>
                 <option>20:00</option>
@@ -46,7 +52,6 @@
                 <option>20:30</option>
                 <option>20:45</option>
                 <option>21:00</option>
-                
             </select>
         </div>
         <div class="text-center">

@@ -5,54 +5,48 @@
 </div>
 
 <div class="container">
-    <form>
+    <form id="subscribeForm">
         <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput">
+            <label for="NameInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="NameInput" placeholder="Votre nom" name="name">
             <div class="invalid-feedback">
-                Votre nom est requis.
+                Le nom est requis.
             </div>
         </div>
         <div class="mb-3">
-            <label for="PrenomInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="PrenomInput">
+            <label for="FirstNameInput" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="FirstNameInput" placeholder="Votre prénom" name="firstName">
             <div class="invalid-feedback">
-                Votre prénom est requis.
+                Le prénom est requis.
             </div>
         </div>
         <div class="mb-3">
-            <label for="EmailInput" class="form-label">Votre Email</label>
-            <input type="email" class="form-control" id="EmailInput">
+            <label for="EmailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="test@gmail.com" name="email">
             <div class="invalid-feedback">
-                Votre mail n'est pas au bon format.
+                Le mail n'est pas au bon format.
             </div>
         </div>
         <div class="mb-3">
-            <label for="PasswordInput" class="form-label">Votre Mot de Passe</label>
-            <input type="password" class="form-control" id="PasswordInput">
+            <label for="PasswordInput" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="PasswordInput" name="password">
             <div class="invalid-feedback">
-                Votre mot de passe n'est pas assez robuste. Il vous faut au moins 8 caractères dont: 1 lettre majuscule, 1 lettre minuscule, 1 chiffre et 1 caractère spécial.
-            </div>
-            <div class="valid-feedback">
-                Votre mot de passe est robuste. PARFAIS.
+                Le mot de passe n'est pas assez robuste: Au moins 8 caractères, comprenant au moins 1 lettre majuscule,
+                1 minuscule, 1 chiffre et 1 caractère spécial
             </div>
         </div>
         <div class="mb-3">
-            <label for="ValidatePasswordInput" class="form-label">Confirmez votre Mot de Passe</label>
-            <input type="password" class="form-control" id="ValidatePasswordInput" >
+            <label for="ValidatePasswordInput" class="form-label">Confirmez votre mot de passe</label>
+            <input type="password" class="form-control" id="ValidatePasswordInput">
             <div class="invalid-feedback">
-                La confirmation n'est pas identique au mot de passe.
+                Les mots de passe ne correspondent pas.
             </div>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="CheckMeOut">
-            <label class="form-check-label" for="CheckMeOut">Se souvenir de moi</label>
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+            <button type="button" class="btn btn-primary" id="btn-validate-signup">Inscription</button>
         </div>
     </form>
-    <div class="text-center pt-3 text-primary">
-        <a href="/signin">Vous avez dejà un compte ? Connectez-vous ici !</a>
+    <div class="text-center pt-3">
+        <a href="/signin">Vous avez déjà un compte? Connectez-vous ici !</a>
     </div>
 </div>
