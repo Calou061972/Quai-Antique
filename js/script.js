@@ -1,6 +1,7 @@
 const tokenCookieName = "accesstoken";
-const btnSignout = document.getElementById("btn-signout");
 const roleCookieName = "role";
+const btnSignout = document.getElementById("btn-signout");
+
 
 btnSignout.addEventListener("click", signout);
 
@@ -54,11 +55,16 @@ function isConnected() {
         return true;
     }
 }
+/* on a 4 utilisateurs
+- disconnected
+- connected (admin ou client)
+- admin
+- client
+ */
 
 function showAndHideElementsForRoles() {
     const userConnected = isConnected();
     const role = getRole();
-
     let allElementsToEdit = document.querySelectorAll('[data-show]');
 
     allElementsToEdit.forEach(element => {
@@ -90,9 +96,3 @@ function showAndHideElementsForRoles() {
     })
 }
 
-/*
-disconnected
-connected (admin ou client)
-admin
-client
- */

@@ -14,6 +14,9 @@ function checkCredentials(){
         //Il faudra récupérer le vrai token
         const token = "AttentionCeciNestPasLeVraiTokenIlVaFalloirLeCréerPlustard";
         setToken(token);
+
+        // Placer ce token en cookie
+        setCookie(roleCookieName, "admin", 7);
         window.location.replace("/");
     }
     else{
