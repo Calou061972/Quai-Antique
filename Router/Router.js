@@ -27,7 +27,7 @@ const LoadContentPage = async () => {
     // Récupération de l'URL actuelle
     const actualRoute = getRouteByUrl(path);
 
-    // Vérifier les droits d'zccès à la page
+    // Vérifier les droits d'accès à la page
     const allRolesArray = actualRoute.authorize;
 
     if(allRolesArray.length > 0) {
@@ -42,6 +42,7 @@ const LoadContentPage = async () => {
             }
         }
     }
+    
     // Récupération du contenu HTML de la route
     const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
 
