@@ -2,19 +2,19 @@
 @import 'custom';
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 main {
-    margin-bottom: 272px;
+  margin-bottom: 272px;
 }
 
 footer.footer {
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 h1,
@@ -23,104 +23,94 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 p {
-    font-family: $font-family-serif;
-    font-size: 18px;
+  font-family: $font-family-serif;
+  font-size: 18px;
 }
 
 .hero-scene {
-    margin-bottom: 15px;
-    position: relative;
+  margin-bottom: 15px;
+  position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../assets/fondHeroScene.jpg);
-        background-size: cover;
-        filter: brightness(0.3);
-    }
-
-    * {
-        // Positionner les éléments devant le before
-        position: relative;
-    }
-
-    .hero-scene-content {
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/fondHeroScene.jpg);
+    background-size: cover;
+    filter: brightness(0.3);
+  }
+  * {
+    position: relative; // Positionner les éléments devant le before
+  }
+  .hero-scene-content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .image-card {
-    position: relative;
-
+  position: relative;
     &:hover {
-        .titre-image, 
-        .action-image-button {
-            opacity: 1;
-        }
-
-        img {
-            filter: brightness(0.3);
-        }
-    }
-
-    img {
-        transition: all 0.3s;
-
-    }
-
-    .titre-image {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: all 0.3s;
-    }
-
+    .titre-image, 
     .action-image-button {
-        top: 0;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        left: 0;
-        width: 100%;
-        padding: 5px;
-        opacity: 0;
-        transition: all 0.3s;
+      opacity: 1;
     }
+    img {
+      filter: brightness(0.3);
+    }
+  }
+  img {
+      transition: all 0.3s;
+  }
+  .titre-image {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+  }
+  .action-image-button {
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
 }
 
 .form-label {
-    color: $primary;
+  color: $primary;
 }
 
 :-webkit-input-placeholder {
     /* Chrome, Safari, Opera */
-    color: grey;
-    opacity: 0.5;
+  color: grey;
+  opacity: 0.5;
 }
 
 .allReservations {
-    a {
-        display: block;
-        color: $black;
-        padding: 10px;
-    }
+  a {
+    display: block;
+    color: $black;
+    padding: 10px;
+  }
 }
